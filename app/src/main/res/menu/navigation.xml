@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Teslimat Detayı" />
+
+    <item
+        android:id="@+id/navigation_products"
+        android:icon="@drawable/products"
+        android:title="Ürün Detayları" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/mapicon"
+        android:title="Konumu Göster" />
+
+    <item
+        android:id="@+id/navigate_photo"
+        android:icon="@drawable/photo_camera"
+        android:title="Belge Kaydet" />
+
+    <item
+        android:id="@+id/complete_order"
+        android:icon="@drawable/complete"
+        android:title="Teslimatı Tamamla" />
+
+</menu>

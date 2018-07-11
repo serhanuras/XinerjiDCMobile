@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_detail_list_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="12sp"
+        android:text="Sipariş Kodu"
+        android:textSize="10sp"
+        android:textColor="#5f97f2"
+        />
+
+    <TextView
+        android:id="@+id/order_detail_list_tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="5dp"
+        android:text="11000"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:layout_below="@id/order_detail_list_tv_title"
+
+        />
+
+
+    <TextView
+        android:id="@+id/order_detail_list_tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#a8a8a8"
+        android:textSize="14sp"
+        android:layout_below="@+id/order_detail_list_tv_value"
+        />
+
+    <ImageView
+        android:id="@+id/order_detail_iv_phone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/phone"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

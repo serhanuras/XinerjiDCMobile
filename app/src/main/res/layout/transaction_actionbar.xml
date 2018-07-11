@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#47a6d8" >
+
+        <ImageView
+            android:id="@+id/transactionactionbar_prev"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/back_icon"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:src="@drawable/xinerji_small_logo"
+            />
+
+        <ImageView
+            android:id="@+id/transactionactionbar_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingRight="2dp"
+            android:src="@mipmap/menu_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="Teslimat Onayı"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/transactionactionbar_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" "
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:background="#47a6d8"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">XinerjiDc</string>
+    <string name="logon_plaque">Plaka</string>
+    <string name="logon_tckn">T.C. Kimlik No</string>
+    <string name="logon_error_popup">Lütfen Kullanıcı Plaka ve T.C. Kimlik No Giriniz.</string>
+    <string name="dashboard_member_name">Merhaba \n Sn.</string>
+    <string name="trip_activity_title">Teslimat Onayı</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment_01">Hello blank fragment - 01</string>
+    <string name="hello_blank_fragment_02">Hello blank fragment - 02</string>
+    <string name="hello_blank_fragment_03">Hello blank fragment - 03</string>
+    <string name="hello_blank_fragment_04">Hello blank fragment - 04</string>
+
+    <string name="order_detail_menu_item_01">Ürün Detayları</string>
+    <string name="order_detail_menu_item_02">Konumu Göster</string>
+    <string name="order_detail_menu_item_03">Teslimat Durum</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,16 @@
+package com.xinerji.xinerjidc.model;
+
+import java.io.Serializable;
+
+public class DeleteOrderDocumentRequest extends AbstractRequest implements Serializable {
+
+    private long Id ;
+
+    public long getId() {
+        return Id;
+    }
+
+    public void setId(long id) {
+        Id = id;
+    }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragment_complete_order_iv_information"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/information" />
+
+    <LinearLayout
+        android:id="@+id/fragment_complete_order_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_toRightOf="@id/fragment_complete_order_iv_information"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_complete_order_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Migros Market"
+            android:textColor="#47a6d8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_complete_order_branch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakırköy"
+            android:textColor="#47a6d8"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:id="@id/trip_tv_line"
+        android:layout_below="@id/fragment_complete_order_information"
+        android:layout_marginTop="10dp"
+        android:background="#979797" />
+
+
+    <TextView
+        android:id="@+id/fragment_complete_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teslimatı Durumu"
+        android:textColor="#47a6d8"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/trip_tv_line"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_complete_order_title"
+        android:id="@+id/fragment_complete_order_rg_result"
+        android:layout_marginLeft="20dp"
+        android:checkedButton="@+id/sound" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_complete_rb_not_problem"
+            android:text="Tam Teslimat"
+            android:checked="true"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_complete_rb_has_problem"
+            android:text="Problemli Teslimat"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/fragment_complete_order_sp_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/spinner_style"
+        android:visibility="gone"
+        android:layout_below="@id/fragment_complete_order_rg_result"
+        />
+
+    <Button
+        android:id="@+id/fragment_complete_order_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundshapelogonbtn"
+        android:text="İleri"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/fragment_complete_order_sp_result"/>
+
+</RelativeLayout>

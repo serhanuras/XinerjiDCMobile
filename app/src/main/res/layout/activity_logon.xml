@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity"
+    android:background="@mipmap/logon_bg">
+
+    <EditText
+        android:id="@+id/logon_et_plaque"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/logon_plaque"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/logon_vehicle"
+        android:drawablePadding="12dip"
+        android:theme="@style/LogonInputTheme"
+        app:layout_constraintBottom_toTopOf="@+id/logon_et_tckn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/logon_et_tckn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="@string/logon_tckn"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:theme="@style/LogonInputTheme"
+        android:drawableLeft="@drawable/logon_user"
+        android:drawablePadding="12dip"
+        app:layout_constraintBottom_toTopOf="@+id/logon_btn_logon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logon_btn_logon"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundshapelogonbtn"
+        android:text="Giriş Yap"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

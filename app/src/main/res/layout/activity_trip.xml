@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    >
+
+        <ImageView
+            android:id="@+id/trip_iv_information"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/information" />
+
+        <LinearLayout
+            android:id="@+id/trip_ll_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:layout_toRightOf="@id/trip_iv_information"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/trip_tv_trip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REF-1452487963456"
+                android:textColor="#47a6d8"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trip_tv_trip_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34CYE88 / Mehmetoğulları Nakliyat"
+                android:textColor="#47a6d8"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:id="@id/trip_tv_line"
+            android:layout_below="@id/trip_ll_information"
+            android:layout_marginTop="10dp"
+            android:background="#979797" />
+
+
+    <ListView
+        android:id="@+id/trip_lv_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/trip_tv_line"
+        />
+
+    </RelativeLayout>

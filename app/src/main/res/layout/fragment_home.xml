@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageView
+        android:id="@+id/fragment_home_iv_information"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/information" />
+
+    <LinearLayout
+        android:id="@+id/fragment_home_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_toRightOf="@id/fragment_home_iv_information"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_home_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Migros Market"
+            android:textColor="#47a6d8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_home_branch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakırköy"
+            android:textColor="#47a6d8"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:id="@id/trip_tv_line"
+        android:layout_below="@id/fragment_home_iv_information"
+        android:layout_marginTop="10dp"
+        android:background="#979797" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trip_tv_line"
+        android:scrollbars="vertical" />
+
+
+
+
+
+</RelativeLayout>
